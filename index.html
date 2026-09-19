@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spiral Motion on the Luoshu Lattice · 洛书网格上的螺旋运动</title>
+<style>
+  :root {
+    --primary: #1a3a5c;
+    --accent: #c9a227;
+    --light: #f8f9fb;
+    --border: #e2e6ea;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    background: #f4f6f9;
+    line-height: 1.7;
+  }
+  .container { max-width: 920px; margin: 0 auto; padding: 40px 20px; }
+  .hero {
+    text-align: center;
+    padding: 60px 20px 50px;
+    background: linear-gradient(135deg, var(--primary) 0%, #2c5c8a 100%);
+    color: #fff;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(26,58,92,0.15);
+  }
+  .hero h1 { font-size: 1.9rem; margin: 0 0 10px; font-weight: 600; letter-spacing: 0.5px; }
+  .hero h2 { font-size: 1.2rem; margin: 0 0 20px; font-weight: 400; opacity: 0.85; }
+  .hero .author { font-size: 0.95rem; opacity: 0.9; }
+  .hero .author a { color: var(--accent); text-decoration: none; }
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    border: 1px solid var(--border);
+  }
+  .card h3 {
+    font-size: 1.25rem;
+    color: var(--primary);
+    margin: 0 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+  }
+  .card h3 .en {
+    font-size: 0.85rem;
+    color: #6b7c8f;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+  .btn-group { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  .btn-primary { background: var(--primary); color: #fff; }
+  .btn-primary:hover { background: #2c5c8a; }
+  .btn-outline { background: #fff; color: var(--primary); border: 1px solid var(--primary); }
+  .btn-outline:hover { background: var(--light); }
+  .doi-tag {
+    display: inline-block;
+    font-family: "Courier New", monospace;
+    font-size: 0.85rem;
+    background: #eef2f7;
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: #3a5a7a;
+    margin: 4px 6px 4px 0;
+  }
+  .vol-list { margin-top: 10px; }
+  .vol-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f2f5;
+    gap: 16px;
+  }
+  .vol-item:last-child { border-bottom: none; }
+  .vol-item .title { flex: 1; font-size: 0.95rem; }
+  .vol-item .title .num {
+    color: var(--accent);
+    font-weight: 600;
+    margin-right: 8px;
+  }
+  .vol-item .links { white-space: nowrap; font-size: 0.85rem; }
+  .vol-item .links a {
+    color: var(--primary);
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  .vol-item .links a:hover { text-decoration: underline; }
+  .footer {
+    text-align: center;
+    color: #8a99a8;
+    font-size: 0.85rem;
+    padding: 40px 0 20px;
+    border-top: 1px solid var(--border);
+    margin-top: 20px;
+  }
+  .footer a { color: var(--primary); text-decoration: none; }
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 1.4rem; }
+    .hero h2 { font-size: 1rem; }
+    .card { padding: 20px; }
+    .vol-item { flex-direction: column; }
+    .vol-item .links { margin-top: 6px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="hero">
+    <h1>Spiral Motion on the Luoshu Lattice</h1>
+    <h2>A Geometric Framework from Particle Masses to the Four Fundamental Forces</h2>
+    <p class="author">
+      Li, Shuping（李淑萍） · ORCID: <a href="https://orcid.org/0009-0007-7434-9263" target="_blank">0009-0007-7434-9263</a><br>
+      Email: lsp.tp@qq.com · Version v2.0 · September 18, 2026
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>v2.0 · 精炼版 <span class="en">Latest Refined Version</span></h3>
+    <p>
+      <strong>洛书网格上的螺旋运动：从粒子质量到四种基本力的几何框架</strong><br>
+      本文建立了一个从螺旋运动出发、以洛书网格为几何基底、覆盖粒子质量谱与四种基本力的几何框架。
+      框架的核心是一条公理：存在一种基本实体——能粒子，它只做永恒的螺旋运动。
+      螺旋运动的离散化产生洛书网格，并自然涌现两个几何常数：黄金比例 Φ 与空间放大倍数 24。
+    </p>
+    <p style="color:#6b7c8f; font-size:0.92rem;">
+      This paper establishes a geometric framework that starts from spiral motion, takes the Luoshu lattice as its geometric substrate, and covers both the particle mass spectrum and the four fundamental forces. It derives 33 particle masses, unifies the four fundamental forces, and provides 12 falsifiable predictions.
+    </p>
+    <div>
+      <span class="doi-tag">OSF DOI: 10.17605/OSF.IO/FYK9S</span>
+      <span class="doi-tag">Zenodo DOI: 10.5281/zenodo.22805463</span>
+    </div>
+    <div class="btn-group">
+      <a class="btn btn-primary" href="luoshu-v2.pdf" target="_blank">📄 下载 PDF（v2.0） / Download PDF</a>
+      <a class="btn btn-outline" href="https://osf.io/fyk9s/" target="_blank">OSF 页面</a>
+      <a class="btn btn-outline" href="https://doi.org/10.5281/zenodo.22805463" target="_blank">Zenodo 页面</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>35卷历史存档 <span class="en">Volumes 1–35 Historical Archive</span></h3>
+    <p style="color:#6b7c8f; font-size:0.92rem;">
+      以下为 2026 年以来的 35 卷完整原始记录。每卷均可通过 Zenodo 或 OSF 访问。
+      The following is the complete 35-volume archive. Each volume is available via Zenodo or OSF.
+    </p>
+
+    <div class="vol-list">
+      <div class="vol-item"><div class="title"><span class="num">Vol.1</span>能粒子·洛书·螺旋：一个一元论的统一场论（V18.0 最终版）</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.2</span>复合粒子的质量生成（v2）</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.3</span>从洛书网格到粒子质量谱与万有引力</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.4</span>能激——宇宙动力学与万物驱动</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.5</span>螺旋永动、网格压力与质量起源</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.6</span>明晰纤维、网格与结：粒子质量的几何图像</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.7</span>质量与引力的网格起源</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.8</span>基础粒子质量谱、脐带网络与数字根宇宙观</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.9</span>复合粒子质量谱与阴阳网格压力的完整推导</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.10</span>阴影动力学：四种基本力的统一起源</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.11</span>万事万物共振原理：中心点5呼吸模型</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.12</span>时间分形嵌套：跨层时间原理与μ子寿命验证</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.13</span>原子分子层级的网格计算纲领</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.14</span>质数的相位几何</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.15</span>同心圆上的阴影：从质数间距到原子电离能</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.16</span>时间变化的起源：微观电离能与宏观GPS</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.17</span>孪生质数猜想的几何等价形式</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.18</span>哥德巴赫定理与孪生质数定理</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.19</span>附录C：孪生质数的阴面共振编码</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.20</span>同心圆分形与阴影动力学</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.21</span>空腔嵌套与9K+M递归</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.22</span>用两个常数验证已知粒子，预测未知粒子</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.23</span>宇宙网格的能量账本</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.24</span>从总圈数到宇宙质量</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.25</span>三域同构与轨道动力学修正</div><div class="links"><a href="https://doi.org/10.5281/zenodo.22782129" target="_blank">Zenodo</a><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+      <div class="vol-item"><div class="title"><span class="num">Vol.26–35</span>综合卷（完整存档见 OSF）</div><div class="links"><a href="https://osf.io/7a3mg/" target="_blank">OSF</a></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>其他平台入口 <span class="en">Other Platforms</span></h3>
+    <ul style="padding-left:20px;">
+      <li><strong>Claude 目录 / Claude Directory</strong>：可在 Claude 中查看论文目录与摘要。</li>
+      <li><strong>OSF 项目</strong>：<a href="https://osf.io/7a3mg/" target="_blank">https://osf.io/7a3mg/</a>（35卷完整存档）</li>
+      <li><strong>OSF v2.0</strong>：<a href="https://osf.io/fyk9s/" target="_blank">https://osf.io/fyk9s/</a>（最新精炼版）</li>
+      <li><strong>Zenodo</strong>：<a href="https://doi.org/10.5281/zenodo.22805463" target="_blank">10.5281/zenodo.22805463</a>（v2.0）</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    © 2026 Li, Shuping · 本页面为论文存档与索引页，不涉及任何商业用途。<br>
+    This page serves as an archive and index for the papers. No commercial use intended.
+  </div>
+
+</div>
+
+</body>
+</html>
