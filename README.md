@@ -5,7 +5,9 @@ There is only one entity in the universe — the energy particle; only one form 
 Using two geometric constants (Φ and 24), this theory derives the masses of 33 kinds of particles, the four fundamental forces, Sun-Earth gravitational force, Coulomb force, ground-state energy of hydrogen atom, and molecular bond energies. **No free parameters.**
 
 ## Access the full manuscript
-Full papers are archived on Zenodo:
+Full papers are archived on 
+Zenodo: 10.5281/zenodo.22805463
+OSF: 10.17605/OSF.IO/FYK9S
 https://doi.org/10.5281/zenodo.22782129
 
 Earlier versions were archived on Zenodo; the prior DOI is no longer active.
