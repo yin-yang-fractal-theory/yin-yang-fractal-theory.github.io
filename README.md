@@ -16,7 +16,7 @@ Version: v2.0
 
 **DOI**
 
-- OSF: `10.17605/OSF.IO/FYK9S1`
+- OSF: `10.17605/OSF.IO/FYK9S
 - Zenodo: `10.5281/zenodo.22805463`
 
 ### Abstract
@@ -63,7 +63,7 @@ The original DOIs of the 1–35 volume PDFs have expired. Use the following unif
 
 **Cite V2.0:**
 
-> Li, Shuping. Spiral Motion on the Luoshu Lattice: A Geometric Framework from Particle Masses to the Four Fundamental Forces (v2.0) [J/OL]. OSF, 2026. DOI: 10.17605/OSF.IO/FYK9S1.
+> Li, Shuping. Spiral Motion on the Luoshu Lattice: A Geometric Framework from Particle Masses to the Four Fundamental Forces (v2.0) [J/OL]. OSF, 2026. DOI: 10.17605/OSF.IO/FYK9S.
 
 > Li, Shuping. Spiral Motion on the Luoshu Lattice: A Geometric Framework from Particle Masses to the Four Fundamental Forces (v2.0) [J/OL]. Zenodo, 2026. DOI: 10.5281/zenodo.22805463.
 
