@@ -1,80 +1,57 @@
-# Spiral Motion on the Luoshu Lattice
+# The Luoshu Master Equation
+## Breathing, Spiral, and a Unified Dynamics of All Things
 
-**Li, Shuping**
+**Yin-Yang Fractal Unified Field Theory, Volume III**
 
-ORCID: 0009-0007-7434-9263
-Email: lsp.tp@qq.com
-
----
-
-## V2.0: Spiral Motion on the Luoshu Lattice
-
-**A Geometric Framework from Particle Masses to the Four Fundamental Forces**
-
-Date: 2026-09-25
-Version: v2.0
-
-**DOI**
-
-- OSF: `10.17605/OSF.IO/FYK9S
-- Zenodo: `10.5281/zenodo.22805463`
-
-### Abstract
-
-This paper establishes a unified geometric framework that begins with spiral motion, takes the Luoshu lattice as its geometric substrate, and covers both the particle mass spectrum and the four fundamental forces.
-
-The framework rests on a single axiom: there exists one fundamental entity — the energy particle — which performs eternal spiral motion. The discretization of spiral motion generates the Luoshu lattice and naturally gives rise to two geometric constants: the golden ratio $\Phi$ and the spatial amplification factor $24$.
-
-Cosmic image: cavity nesting. All things are cavities nested within cavities. The atomic nucleus is a rotating cavity, the electron is a small vortex outside the cavity, a molecular bond is the overlap of two cavities along the bond axis, and a planetary system is the same structure repeated at a larger scale. The connection between cavities (the umbilical cord) is topologically stable by the Helmholtz-Moffatt theorem — it cannot be cut by any continuous deformation. This image is the geometric heart of this paper.
-
-From this starting point, the paper derives:
-
-- **Particle mass spectrum**: masses of 33 particles derived from the two geometric constants, maximum deviation $5.85\%$, mean deviation $0.89\%$
-- **Fourth-generation lepton prediction**: mass about $8.60\,\mathrm{GeV}$
-- **Unification of the four fundamental forces**: gravity, electromagnetism, strong force, and weak force described by a single shadow-dynamics formula
-- **Atomic and molecular scales**: ionization energy mean deviation $2.2\% - 3.1\%$, molecular bond energy MAD about $10.5\%$
-- **Island of stability prediction**: period-8 p-block predicted at $6.19 - 10.98\,\mathrm{eV}$, period-9 p-block at $3.88 - 8.14\,\mathrm{eV}$, island-of-stability center $Z = 126$ at $6.0 \pm 1.0\,\mathrm{eV}$
-- **Temporal fractality**: muon lifetime deviation $0.77\%$
-- **Cosmological closed loop**: total number of turns from the Planck scale to the electron layer is $10^{92.7}$
-- **Number-theoretic framework**: within the Fractal Continuity Axiom (FCA) system, the twin prime conjecture and Goldbach's conjecture are endogenous theorems
-
-This theory is complementary to relativity, quantum mechanics, and the Standard Model. It provides geometric origins for the constancy of light speed, the Lorentz transformation, the Einstein field equation, the Schrödinger equation, and the uncertainty principle. The paper presents 13 falsifiable predictions, each with a concrete experimental proposal.
-
-### Keywords
-
-spiral motion; Luoshu lattice; golden ratio; cavity nesting; particle mass spectrum; four fundamental forces; shadow dynamics; temporal fractality; fractal continuity axiom
+Author: Li, Shuping (李淑萍)  
+ORCID: [0009-0007-7434-9263](https://orcid.org/0009-0007-7434-9263)  
+Email: lsp.tp@qq.com  
+Date: October 2026  
+Version: v3.0
 
 ---
 
-## Volumes 1–35
+## Abstract
 
-Volumes 1–35, completed in 2026, are the original thought system behind V2.0. They build the Luoshu lattice, the two geometric constants, the particle mass spectrum, the four fundamental forces, atomic and molecular physics, temporal fractality, and the number-theoretic framework step by step.
+Starting from a single breathing axiom of the Central Point 5, this volume establishes the Luoshu Master Equation, whose Hamiltonian contains four terms—breathing, driving, coupling, and dissipation—corresponding to the four fundamental forces. From this unified dynamical framework, the theory derives the masses of 33 particles from two geometric constants (the golden ratio Φ and the spatial amplification factor 24) with a mean deviation of 0.89%; unifies gravity, electromagnetism, the strong force, and the weak force under a single shadow-dynamics formula; reproduces the ionization energies of 30 elements (periods 2–6) with pure-prime-state deviations of 0.03%–0.8%; yields molecular bond energies for 59 diatomic molecules with a mean absolute deviation of approximately 10.5%; and provides a temporal-fractal explanation for the muon lifetime with a renormalized deviation of 0.1%.
 
-V2.0 is the distilled, corrected, and unified version of that original series.
-
-The original DOIs of the 1–35 volume PDFs have expired. Use the following unified entry points instead:
-
-- **Zenodo**: `10.5281/zenodo.22782129`
-- **OSF**: `10.17605/OSF.IO/7A3MG`
+The volume further gives geometric origins for the wave function, the Schrödinger equation, the uncertainty principle, spin, and the constancy of the speed of light, and presents 13 falsifiable predictions, including a fourth-generation lepton at approximately 8.60 GeV, period-8 p-block ionization energies of 6.19–10.98 eV, and an island-of-stability center at Z = 126 with an ionization energy of 6.0 ± 1.0 eV.
 
 ---
 
-## How to Cite
+## 摘要
 
-**Cite V2.0:**
+本卷从中心点5的呼吸公理出发，建立洛书总方程。该方程的哈密顿算符包含四项——呼吸项、驱动项、耦合项、耗散项——分别对应四种基本力。在这一统一动力学框架下，本理论从两个几何常数（黄金比例 Φ 与空间放大倍数 24）推导出 33 种粒子的质量，平均偏差 0.89%；将引力、电磁力、强力、弱力统一在同一个阴影动力学公式下；再现第二至第六周期 30 种元素的电离能（纯质数态偏差 0.03%–0.8%）；给出 59 个双原子分子的键能（纯共价键与弱极性键的平均绝对偏差约 10.5%）；并对 μ 子寿命给出时间分形解释（重整化后偏差 0.1%）。
 
-> Li, Shuping. Spiral Motion on the Luoshu Lattice: A Geometric Framework from Particle Masses to the Four Fundamental Forces (v2.0) [J/OL]. OSF, 2026. DOI: 10.17605/OSF.IO/FYK9S.
+本卷进一步为波函数、薛定谔方程、不确定性原理、自旋、光速不变提供几何来源，并给出 13 项可证伪预言，包括约 8.60 GeV 的第四代轻子、第 8 周期 p 区元素电离能 6.19–10.98 eV，以及稳定岛中心 Z=126 的电离能 6.0 ± 1.0 eV。
 
-> Li, Shuping. Spiral Motion on the Luoshu Lattice: A Geometric Framework from Particle Masses to the Four Fundamental Forces (v2.0) [J/OL]. Zenodo, 2026. DOI: 10.5281/zenodo.22805463.
+---
 
-**Cite Volumes 1–35:**
+## Files
 
-> Li, Shuping. Yin-Yang Fractal Unified Field Theory (Volumes 1–35) [J/OL]. Zenodo, 2026. DOI: 10.5281/zenodo.22782129.
+- `index.html` — V3 网页展示页
+- `index-v2.html` — V2 旧版展示页（保留）
+- `luoshu-v3.pdf` — V3 论文 PDF（本卷）
+- `luoshu-v2.pdf` — V2 论文 PDF（前序卷次）
 
-> Li, Shuping. Yin-Yang Fractal Unified Field Theory (Volumes 1–35) [J/OL]. OSF, 2026. DOI: 10.17605/OSF.IO/7A3MG.
+---
+
+## Links
+
+- **OSF DOI (V3 Registration):** [10.17605/OSF.IO/6PCRU](https://doi.org/10.17605/OSF.IO/6PCRU)
+- **OSF Project:** [https://osf.io/4jdxg](https://osf.io/4jdxg)
+- **Zenodo DOI:** 10.5281/zenodo.23232089
 
 ---
 
 ## License
 
-CC BY 4.0
+CC-By Attribution 4.0 International
+
+---
+
+## Citation
+
+If you cite this work, please use:
+
+> Li, Shuping. (2026). *The Luoshu Master Equation: Breathing, Spiral, and a Unified Dynamics of All Things* (Yin-Yang Fractal Unified Field Theory, Volume III, v3.0). OSF. https://doi.org/10.17605/OSF.IO/6PCRU
